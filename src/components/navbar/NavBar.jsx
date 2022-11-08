@@ -53,11 +53,15 @@ const NavBar = () => {
       {menuBtn && (
         <div className="popup">
           <div className="nav-menu-links">
-            <a href="#">Home</a>
-            <br />
-            <a href="#">Pricing</a>
-            <br />
-            <a href="#">Content</a>
+            <div className="a" >
+              <a href="#">Home</a> <br />
+            </div>
+            <div className="a" >
+              <a href="#">Pricing</a> <br />
+            </div>
+            <div className="a" >
+              <a href="#">Content</a>
+            </div>
           </div>
           <div className="menu-button">
             <button className="button btn btn-primary">Get start</button>

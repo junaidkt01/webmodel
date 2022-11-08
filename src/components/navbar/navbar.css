@@ -1,4 +1,5 @@
 .navbar {
+  position: fixed;
   background-color: #0000000f;
 }
 
@@ -39,19 +40,35 @@
 }
 
 .popup {
-  display: grid;
-  justify-content: center;
-  background-color: #af3737;
-  padding: 2rem;
-}
+  position: fixed;
 
-.nav-menu-links a {
+  padding: 2rem 0 2rem 2rem;
+  background-color: #1b1613;
+  width: 100%;
+  z-index: 10;
+}
+.popup .nav-menu-links .a a {
   text-decoration: none;
+  font-size: x-large;
   color: #fff;
-  font-size: 25px;
+}
+.popup .nav-menu-links .a {
   margin-bottom: 1rem;
 }
 
-.menu-button {
-  margin-top: 1rem;
+/* .popup {
+  background-color: #af3737;
+  margin-left: 2rem;
+  margin: 5rem;
 }
+
+.popup .nav-menu-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  margin: 1rem 0 1rem 0;
+}
+
+.menu-button {
+  margin: 1rem 0 1rem 0;
+} */
