@@ -8,11 +8,11 @@ const NavBar = () => {
   const [menuBtn, setMenuBtn] = useState(false);
   useEffect(() => {
     setScreenSize(window.innerWidth);
-  }, [screenSize]);
+  });
   console.log("screenSize", screenSize);
   return (
     <>
-      <div className="navbar">
+      <div className="navbars">
         {screenSize >= 700 ? (
           <div className="nav-things">
             <div className="nav-link">
@@ -52,14 +52,29 @@ const NavBar = () => {
       </div>
       {menuBtn && (
         <div className="popup">
+               <div onClick={() => setMenuBtn(!menuBtn)} className="menu-icon2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+            </div>
           <div className="nav-menu-links">
-            <div className="a" >
+            <div className="a">
               <a href="#">Home</a> <br />
             </div>
-            <div className="a" >
+            <div className="a">
               <a href="#">Pricing</a> <br />
             </div>
-            <div className="a" >
+            <div className="a">
               <a href="#">Content</a>
             </div>
           </div>
