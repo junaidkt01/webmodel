@@ -1,0 +1,61 @@
+.service {
+  background-color: #f5f2ee;
+}
+.service-content .head {
+  padding-top: 2rem;
+  display: grid;
+  justify-content: center;
+  font-weight: bold;
+}
+.service-content .text {
+  display: grid;
+  justify-content: center;
+  margin: 1rem;
+}
+.service-content .filter {
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.service-content .filter::-webkit-scrollbar {
+  display: none;
+}
+.service-content .filter a {
+  text-decoration: none;
+  color: black;
+  margin-left: 1rem;
+}
+.service-content .filter a:hover {
+  border-bottom: 2px solid;
+}
+.service .cards {
+  display: flex;
+  justify-content: center;
+}
+.cards .card {
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin: 1rem 1rem 5rem 0;
+}
+.cards div img {
+  width: 200px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 700px) {
+  .service .cards {
+    display: grid;
+    justify-content: center;
+  }
+  .cards .card {
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin: 1rem 0 0 0;
+  }
+}

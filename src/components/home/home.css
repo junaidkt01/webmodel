@@ -1,0 +1,81 @@
+.home{
+  margin-top: -5rem;
+}
+.images {
+  display: flex;
+}
+
+.image1 {
+  background-image: url("../../images/image3.jpg");
+  min-height: 600px;
+}
+.image2 {
+  background-image: url("../../images/pexels-ricardo-esquivel-1662159.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.content {
+  color: #fff;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.content .head-content {
+  margin: 6rem 0 2rem 0;
+}
+.table {
+  margin-top: 2rem;
+  max-width: 800px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 0.8rem;
+}
+.table div select {
+  border: none;
+}
+.table div label {
+  margin-left: 4px;
+}
+.search-icon {
+  position: relative;
+  top: 1rem;
+  cursor: pointer;
+}
+.checkbox {
+  margin-top: 2rem;
+  display: flex;
+}
+.checkbox p svg {
+  margin-right: 0.5rem;
+}
+.checkbox p:nth-child(2) {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+  .images {
+    display: grid;
+  }
+  .content {
+    color: #fff;
+    margin-left: 1rem;
+  }
+
+  .table .table2,
+  .table3 {
+    display: none;
+  }
+  .checkbox {
+    display: grid;
+    justify-content: start;
+  }
+  .checkbox p:nth-child(2) {
+    margin-left: 0;
+  }
+  .image2 {
+    height: 300px;
+  }
+}
